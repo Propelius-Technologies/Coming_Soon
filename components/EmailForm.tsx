@@ -11,9 +11,9 @@ const EmailForm = () => {
         e?.preventDefault();
         setLoading(true)
         let regEmail = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
-        const data = await fetch('/api/subscribe');
-        const response = await data.json();
         if(regEmail.test(email)){
+            const data = await fetch('/api/subscribe');
+            const response = await data.json();
             toast.success(response.message, {
                 autoClose: 5000,
                 hideProgressBar: false,
