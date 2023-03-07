@@ -38,8 +38,8 @@ const EmailForm = () => {
         <div>
             <ToastContainer />
             <form >
-            <div className=' absolute top-[50%] md:top-[60%] md:left-[-25%] 2xl:top-[60%] 2xl:left-[0%] xl:top-[65%] lg:top-[58%] md:top-[50%] md:left-[15%] left-0 mx-10 mt-[80px] lg:mt-[20px] md:mt-[40px] 2xl:mt-12 flex flex-col md:flex-row md:w-[100px]  w-full max-w-[80%] min-[2560px]:left-[0%] '>
-                <input required onChange={(e)=>setEmail(e.target.value)} type="email" placeholder='Your Email Address' className='rounded-md p-4 2xl:text-2xl hover:border-none w-full md:w-[512px] focus:outline-none' />
+            <div className=' flex flex-col items-center mx-10 mt-[-55px] 2xl:mt-[8rem] sm:items-start  lg:mt-[14px]  md:mt-[-5rem] ml-[3px] 2xl:mt-[5rem] gap-5  md:flex-col gap-5 items-start min-[1440px]:mt-[5rem] w-fit max-w-[100%] min-[2560px]:ml-[25px] '>
+                <input required onChange={(e)=>setEmail(e.target.value)} type="email" placeholder='Your Email Address' className='shadow-lg shadow-indigo-500/80 rounded-md p-4 2xl:text-2xl hover:border-none w-full md:w-auto focus:outline-none' />
                 <CustomButton loading={loading} onClickHandler={onClickHandler}/>
             </div>
             <p>{error}</p>
